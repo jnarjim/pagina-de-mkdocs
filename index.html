@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="None">
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>MkDocs-LM</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "P\u00e1gina creada con MkDocs - Lenguaje de Marcas";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> MkDocs-LM</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Página creada con MkDocs - Lenguaje de Marcas</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#instalacion-de-mkdocs">Instalación de MkDocs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#comandos">Comandos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#crear-una-pagina-web-en-mkdocs">Crear una página web en MkDocs</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="DarkSouls/">Dark Souls</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="FireEmblem/">Fire Emblem</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="MonsterHunterWorld/">Monster Hunter World</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">MkDocs-LM</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Página creada con MkDocs - Lenguaje de Marcas</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="pagina-creada-con-mkdocs-lenguaje-de-marcas">Página creada con MkDocs - Lenguaje de Marcas</h1>
+<h2 id="instalacion-de-mkdocs">Instalación de MkDocs</h2>
+<p>Para instalar MkDocs, sigue estos pasos:</p>
+<ol>
+<li>
+<p>Asegúrate de tener Python 3 instalado en tu sistema. Si no lo tienes, descarga e instala Python 3 desde el sitio web oficial de Python.</p>
+</li>
+<li>
+<p>Abre la línea de comandos en tu sistema operativo.</p>
+</li>
+<li>
+<p>Ejecuta el siguiente comando para instalar MkDocs y sus dependencias:</p>
+</li>
+</ol>
+<p><code>pip install mkdocs</code></p>
+<p>Si tienes problemas para instalar MkDocs debido a permisos de usuario, puedes agregar el parámetro <code>--user</code> al final del comando para instalarlo solo para el usuario actual:</p>
+<pre><code>pip install mkdocs --user
+
+</code></pre>
+<ol>
+<li>Una vez que MkDocs esté instalado, puedes verificar la versión instalada con el siguiente comando:</li>
+</ol>
+<p><code>mkdocs --version</code></p>
+<p>Con estos pasos, tendrás MkDocs instalado en tu sistema y podrás  comenzar a utilizarlo para crear documentación estática para tus  proyectos.</p>
+<h2 id="comandos">Comandos</h2>
+<p>MkDocs es una herramienta de línea de comandos que permite crear documentación estática utilizando archivos Markdown y un conjunto de plantillas de sitio web personalizables. A continuación se detallan algunos de los comandos más utilizados en MkDocs:</p>
+<ol>
+<li><code>mkdocs new &lt;nombre&gt;</code>: Crea un nuevo proyecto de documentación con el nombre especificado.</li>
+<li><code>mkdocs serve</code>: Inicia un servidor web local que muestra la documentación generada. Los cambios realizados en los archivos Markdown se actualizarán automáticamente en el servidor local.</li>
+<li><code>mkdocs build</code>: Genera la documentación estática en la carpeta "site" del proyecto. Esto debe hacerse antes de publicar la documentación en un servidor web.</li>
+<li><code>mkdocs gh-deploy</code>: Publica la documentación generada en GitHub Pages.</li>
+<li><code>mkdocs pdf</code>: Genera un archivo PDF a partir de la documentación. Se requiere la instalación de una herramienta adicional llamada WeasyPrint para utilizar este comando.</li>
+<li><code>mkdocs --version</code>: Muestra la versión actual de MkDocs instalada en el sistema.</li>
+</ol>
+<p>Estos son solo algunos de los comandos más utilizados en MkDocs. Hay muchos otros comandos y opciones disponibles que se pueden consultar en la documentación oficial de MkDocs.</p>
+<h2 id="crear-una-pagina-web-en-mkdocs">Crear una página web en MkDocs</h2>
+<p>Para crear una página web con MkDocs, sigue estos pasos:</p>
+<ol>
+<li>Crea un nuevo proyecto de documentación ejecutando el siguiente comando en la línea de comandos:</li>
+</ol>
+<pre><code>mkdocs new my-docs
+</code></pre>
+<p>Este comando creará una nueva carpeta llamada "my-docs" que contendrá la estructura básica de un proyecto de documentación de MkDocs.</p>
+<p>Cambia al directorio del proyecto recién creado con el siguiente comando:</p>
+<pre><code>cd my-docs
+</code></pre>
+<p>Abre la carpeta "docs" que se encuentra dentro del proyecto. Allí encontrarás un archivo llamado "index.md". Este archivo es la página principal de tu documentación. Puedes editar este archivo utilizando Markdown para agregar contenido a la página.</p>
+<p>Ejecuta el siguiente comando para iniciar un servidor web local y ver tu documentación en el navegador:</p>
+<pre><code>mkdocs serve
+</code></pre>
+<p>Esto abrirá un servidor local en el puerto 8000 que mostrará tu documentación. Para ver la documentación, abre un navegador y navega a la dirección <code>http://localhost:8000</code>.</p>
+<p>Para personalizar la apariencia de tu documentación, puedes modificar el archivo "mkdocs.yml" que se encuentra en la raíz del proyecto. Este archivo contiene opciones de configuración para la plantilla de sitio web que se utiliza para generar la documentación.</p>
+<p>Una vez que estés satisfecho con la apariencia y el contenido de tu documentación, ejecuta el siguiente comando para generar la versión estática de la documentación:</p>
+<ol>
+<li><code>mkdocs build</code></li>
+</ol>
+<p>Esto generará una carpeta llamada "site" que contendrá la versión estática de tu documentación.</p>
+<ol>
+<li>Finalmente, puedes publicar la documentación en un servidor web utilizando cualquier método que desees. Por ejemplo, puedes subir la carpeta "site" a un servidor web estático como GitHub Pages o AWS S3.</li>
+</ol>
+<p>Con estos pasos, tendrás una página web básica creada con MkDocs que puedes personalizar y publicar en línea.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="DarkSouls/" class="btn btn-neutral float-right" title="Dark Souls">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="DarkSouls/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2023-03-24 09:27:01.326334+00:00
+-->
